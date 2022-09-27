@@ -1,9 +1,9 @@
-import React from 'react';
-import style from '../styles/style';
+import React from "react";
+import style from "../styles/style";
 
 const Loading = () => {
   return (
-    <p className={`${style.flexCenter} ${style.heading2} relative bottom-48`}>
+    <p className={`${style.flexCenter} ${style.heading2} relative`}>
       Loading...
     </p>
   );

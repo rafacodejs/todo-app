@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from '../styles/style';
+import React from "react";
+import styles from "../styles/style";
 
 const Empty = () => {
   return (
-    <p className={`${styles.heading2} ${styles.flexCenter} relative bottom-48 `}>
+    <p className={`${styles.heading2} ${styles.flexCenter} relative  `}>
       ¡Crea tu primer TODO!
     </p>
   );

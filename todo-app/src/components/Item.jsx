@@ -20,7 +20,7 @@ const Item = (props) => {
       </span>
       <p
         className={`w-full ml-[55px] italic font-semibold text-[22px] xs:text-[28px] xs:ml-[65px] ${
-          props.completed && ' line-through line-through-bold'
+          props.completed && ' line-through'
         }`}
       >
         {props.text}

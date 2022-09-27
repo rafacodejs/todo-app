@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../styles/style';
-import { Context } from '../context/context';
+import React from "react";
+import styles from "../styles/style";
+import { Context } from "../context/context";
 
 import {
   Header,
@@ -14,7 +14,7 @@ import {
   Modal,
   Search,
   TabBar,
-} from '../components';
+} from "../components";
 
 const AppUI = () => {
   const {
@@ -28,7 +28,7 @@ const AppUI = () => {
   } = React.useContext(Context);
 
   return (
-    <div className='bg-primary h-screen overflow-x-hidden'>
+    <div className="bg-primary h-screen overflow-x-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <Header />
       </div>
@@ -64,10 +64,10 @@ const AppUI = () => {
             </Modal>
           )}
         </div>
-        <TabBar className='hidden xs:visible'>
-          <Button setOpenModal={setOpenModal} />
+        <TabBar className="hidden xs:visible">
+          <Button />
         </TabBar>
-        <div className='sg:invisible lg:visible absolute right-6 bottom-[-20px] cursor-pointer'>
+        <div className="sg:invisible lg:visible absolute right-6 bottom-[-20px] cursor-pointer">
           <Button setOpenModal={setOpenModal} />
         </div>
       </div>

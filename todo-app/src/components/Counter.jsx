@@ -7,7 +7,7 @@ const Counter = () => {
 
   return (
     <h2
-      className={`${style.paragraph} ${style.flexCenter} mb-4 relative bottom-10 xs:bottom-4`}
+      className={`${style.paragraph} ${style.flexCenter} mb-4 relative bottom-6 xs:bottom-4`}
     >
       Has completado {completedTodos} de {totalTodos} ToDos
     </h2>

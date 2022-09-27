@@ -12,7 +12,7 @@ const Search = () => {
 
   return (
     <form
-      className={`${style.flexCenter}  mb-5 px-4 relative bottom-10 xs:bottom-0`}
+      className={`${style.flexCenter}  mb-5 px-4 relative bottom-6 xs:bottom-0`}
     >
       <div className='relative '>
         <BiSearch className='absolute top-0 bottom-0 w-8 h-8 my-auto text-black left-2' />
