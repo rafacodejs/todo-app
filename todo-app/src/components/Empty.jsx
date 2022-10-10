@@ -3,7 +3,7 @@ import styles from "../styles/style";
 
 const Empty = () => {
   return (
-    <p className={`${styles.heading2} ${styles.flexCenter} relative  `}>
+    <p className={`${styles.heading2} ${styles.flexCenter} relative`}>
       ¡Crea tu primer TODO!
     </p>
   );

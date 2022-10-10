@@ -75,3 +75,10 @@ function Provider(props) {
 }
 
 export { Context, Provider };
+
+
+const todos = [
+  {text:'Cortar cebolla', completed:false},
+  {text:'Tormar el curso de intro a react', completed:false},
+  {text:'Llorar con la llorona', completed:false}
+];
