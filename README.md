@@ -1,6 +1,6 @@
 # [TODO Machine](https://todomachineapp.netlify.app/) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/rafacodejs) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/rafacodejs/) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](#)
 
-[![Slide1.jpg](https://i.postimg.cc/RC6fg9LQ/Slide1.jpg)](https://todomachineapp.netlify.app/)
+[![todoapp-cover.jpg](https://i.postimg.cc/RVQDZ2bf/todoapp-cover.jpg)](https://todomachineapp.netlify.app/)
 
 ## 📜 Resumen 📜
 
