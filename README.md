@@ -32,7 +32,7 @@ App de TODOS para organizar todos tus pendientes en el trabajo, universidad  y t
         <img src="https://i.postimg.cc/rF6WrLjr/html.png" width="100%" />
       </td>
       <td>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/300px-Tailwind_CSS_Logo.svg.png" width="100%" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/400px-Tailwind_CSS_Logo.svg.png" width="100%" />
       </td>
       <td>
         <img
