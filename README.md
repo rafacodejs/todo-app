@@ -1,10 +1,10 @@
 # [TODO Machine](https://todomachineapp.netlify.app/) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/rafacodejs) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/rafacodejs/) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](#)
 
-[![TODOMachine-cover.png](https://i.postimg.cc/KzwRLkKk/TODOMachine-cover.png)](https://todomachineapp.netlify.app/)
+[![TODOMachine-cover.png](https://i.postimg.cc/KzCLrsK5/TODOMachine-cover.png)](https://todomachineapp.netlify.app/)
 
 ## 📜 Resumen 📜
 
-App de TODOS para organizar todos tus pendientes en el trabajo, universidad  y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados .
+App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados .
 
 ## 💻 Si quieres ver el código en tu computadora solo debes hacer esta instalación 💻
 
