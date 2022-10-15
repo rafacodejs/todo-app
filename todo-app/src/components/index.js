@@ -9,6 +9,7 @@ import { Loading } from './Loading';
 import { Modal } from './Modal';
 import { Search } from './Search';
 import { TabBar } from './TabBar';
+import { ChangesAlert } from './ChangesAlert';
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   Modal,
   Search,
   TabBar,
+  ChangesAlert,
 };

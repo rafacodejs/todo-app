@@ -1,12 +1,11 @@
 import React from 'react';
-import { useLocalStorage } from '../CustomHooks/useLocalStorage';
+import { useLocalStorage } from './useLocalStorage';
 
-const Context = React.createContext();
-
-function Provider(props) {
+function useTodos() {
   const {
     item: todos,
     saveItem: saveTodos,
+    sincronizeItem: sincronizeTodos,
     loading,
     error,
   } = useLocalStorage('TODOS_V1', []);
@@ -52,33 +51,21 @@ function Provider(props) {
     saveTodos(newTodos);
   };
 
-  return (
-    <Context.Provider
-      value={{
-        loading,
-        error,
-        totalTodos,
-        completedTodos,
-        searchValue,
-        setSearchValue,
-        searchedTodos,
-        addTodo,
-        completeTodo,
-        deleteTodo,
-        openModal,
-        setOpenModal,
-      }}
-    >
-      {props.children}
-    </Context.Provider>
-  );
+  return {
+    loading,
+    error,
+    totalTodos,
+    completedTodos,
+    searchValue,
+    setSearchValue,
+    searchedTodos,
+    addTodo,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+    sincronizeTodos,
+  };
 }
 
-export { Context, Provider };
-
-
-const todos = [
-  {text:'Cortar cebolla', completed:false},
-  {text:'Tormar el curso de intro a react', completed:false},
-  {text:'Llorar con la llorona', completed:false}
-];
+export { useTodos };

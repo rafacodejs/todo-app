@@ -6,7 +6,7 @@ import { BiX } from 'react-icons/bi';
 const Item = (props) => {
   return (
     <li
-      className={`w-[300px] h-[64px] relative bottom-10 mt-5 rounded-[12px] ${styles.flexCenter} bg-black-gradient xs:w-[500px] xs:bottom-0 xs:top-3`}
+      className={`w-[300px] h-[64px] relative mt-6 rounded-[12px] ${styles.flexCenter} bg-black-gradient xs:w-[500px] xs:bottom-10`}
     >
       <span
         className={`${
