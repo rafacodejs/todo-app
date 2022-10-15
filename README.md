@@ -4,13 +4,13 @@
 
 ## 📜 Resumen 📜
 
-Descubre las mejores películas, series, estrenos, y reviews en MovieLab. Proyecto construido con la API de TheMovieBD, utilizando las async functions de JavaScript, manipulación de DOM, navegación de una SPA y slider automáticos.
+App de TODOS para organizar todos tus pendientes en el trabajo, universidad  y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados .
 
 ## 💻 Si quieres ver el código en tu computadora solo debes hacer esta instalación 💻
 
 - Ubicarse en la carpeta que contendrá el proyecto
 - Abrir terminal de comandos
-  - git https://github.com/rafacodejs/MovieLab.git
+  - git https://github.com/rafacodejs/todo-app.git
   - cd todo-app
   - Abrir tu editor de código
 
@@ -23,6 +23,7 @@ Descubre las mejores películas, series, estrenos, y reviews en MovieLab. Proyec
       <th>Tailwind</th>
       <th>JavaScript</th>
       <th>React</th>
+      <th>Vite</th>
     </tr>
   </thead>
   <tbody>
@@ -40,6 +41,10 @@ Descubre las mejores películas, series, estrenos, y reviews en MovieLab. Proyec
        <td>
         <img
           src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="100%" />
+      </td>
+       <td>
+        <img
+          src="https://vitejs.dev/logo-with-shadow.png" width="100%" />
       </td>
     </tr>
   </tbody>
