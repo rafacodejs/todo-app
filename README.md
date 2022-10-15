@@ -4,7 +4,7 @@
 
 ## 📜 Resumen 📜
 
-App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados .
+App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados.
 
 ## 💻 Si quieres ver el código en tu computadora solo debes hacer esta instalación 💻
 
