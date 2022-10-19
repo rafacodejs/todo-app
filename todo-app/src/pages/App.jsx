@@ -16,7 +16,7 @@ import {
   ChangesAlert,
 } from '../components';
 
-function App() {
+const App = () => {
   const {
     error,
     loading,
@@ -85,6 +85,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export { App };
