@@ -17,21 +17,26 @@ import {
 } from '../components';
 
 const App = () => {
+  const { states, stateUpdaters } = useTodos();
+
   const {
     error,
     loading,
     searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
     totalTodos,
     completedTodos,
+    openModal,
     searchValue,
-    setSearchValue,
+  } = states;
+
+  const {
+    setOpenModal,
     addTodo,
+    deleteTodo,
+    setSearchValue,
+    completeTodo,
     sincronizeTodos,
-  } = useTodos();
+  } = stateUpdaters;
 
   return (
     <div className='bg-primary h-screen overflow-x-hidden'>
