@@ -4,9 +4,10 @@ import styles, { layout } from '../styles/style';
 import image from '../assets/imageToDo.png';
 
 const Form = (props) => {
-  const [newTodoValue, setNewTodoValue] = React.useState('');
-
   const navigate = useNavigate();
+  const [newTodoValue, setNewTodoValue] = React.useState(
+    props.defaultText || ''
+  );
 
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
@@ -14,11 +15,10 @@ const Form = (props) => {
   const onCancel = () => {
     navigate('/');
   };
-
   const onSubmit = (event) => {
     event.preventDefault();
-    navigate('/');
     props.submitEvent(newTodoValue);
+    navigate('/');
   };
 
   return (
@@ -40,25 +40,22 @@ const Form = (props) => {
               className='font-poppins bg-dimWhite text-black
         text-2xl text-center mt-2 p-2 h-[100px] w-[250px]   md:w-96 rounded-[6px] outline-none placeholder:text-black placeholder:text-[16px] '
             />
+            <div className={`${styles.flexCenter}`}>
+              <button
+                type='button'
+                className={`w-[100px] mr-4 py-4 item-center mt-6 rounded-xl bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none transition-all duration-500 ease-in-out transform hover:-translate-y-3`}
+                onClick={onCancel}
+              >
+                Cancelar
+              </button>
+              <button
+                type='submit'
+                className={`w-[100px] py-4 item-center mt-6 rounded-xl bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none transition-all duration-500 ease-in-out transform hover:-translate-y-3`}
+              >
+                {props.submitText}
+              </button>
+            </div>
           </form>
-
-          <div className={`${styles.flexCenter}`}>
-            <button
-              type='button'
-              onClick={onCancel}
-              className={`w-[100px] mr-4 py-4 item-center mt-6 rounded-xl bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none transition-all duration-500 ease-in-out transform hover:-translate-y-3`}
-              //onClick={onCancel}
-            >
-              Cancelar
-            </button>
-
-            <button
-              className={`w-[100px] py-4 item-center mt-6 rounded-xl bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none transition-all duration-500 ease-in-out transform hover:-translate-y-3`}
-              type='submit'
-            >
-              {props.submitText}
-            </button>
-          </div>
         </div>
 
         <img src={image} alt='todo-logo' className='w-[200px] md:w-[300px]' />

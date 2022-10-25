@@ -43,7 +43,7 @@ const useLocalStorage = (itemName, initialValue) => {
       } finally {
         onLoading();
       }
-    }, 3000);
+    }, 1000);
   }, [sincronizedItem]);
 
   const saveItem = (newItem) => {
