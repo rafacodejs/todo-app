@@ -23,6 +23,7 @@ App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu
       <th>Tailwind</th>
       <th>JavaScript</th>
       <th>React</th>
+      <th>React Router</th>
       <th>Vite</th>
     </tr>
   </thead>
@@ -41,6 +42,10 @@ App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu
        <td>
         <img
           src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="100%" />
+      </td>
+       <td>
+        <img
+          src="https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png" width="100%" />
       </td>
        <td>
         <img
