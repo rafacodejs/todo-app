@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../styles/style';
 import { useTodos } from '../Hooks/useTodos';
 import {
@@ -7,17 +8,18 @@ import {
   Search,
   Button,
   Empty,
-  Form,
+  //Form,//
   Item,
   List,
   Loading,
-  Modal,
+  //Modal,
   TabBar,
   ChangesAlert,
 } from '../components';
 
 const Home = () => {
   const { states, stateUpdaters } = useTodos();
+  const navigate = useNavigate();
 
   const {
     error,
@@ -25,12 +27,12 @@ const Home = () => {
     searchedTodos,
     totalTodos,
     completedTodos,
-    openModal,
+    //openModal,
     searchValue,
   } = states;
 
   const {
-    setOpenModal,
+    // setOpenModal,
     addTodo,
     deleteTodo,
     setSearchValue,
@@ -65,27 +67,34 @@ const Home = () => {
             )}
             render={(todo) => (
               <Item
-                key={todo.text}
+                key={todo.id}
                 text={todo.text}
                 completed={todo.completed}
-                onComplete={() => completeTodo(todo.text)}
-                onDelete={() => deleteTodo(todo.text)}
+                onComplete={() => completeTodo(todo.id)}
+                onDelete={() => deleteTodo(todo.id)}
+                onEdit={() => navigate(`/edit/${todo.id}`)}
               />
             )}
           ></List>
 
-          {!openModal && (
+          {/*{!openModal && (
             <Modal>
               <Form addTodo={addTodo} setOpenModal={setOpenModal} />
             </Modal>
-          )}
+          )} */}
+
           <ChangesAlert className='z-20' sincronize={sincronizeTodos} />
         </div>
-        <TabBar setOpenModal={setOpenModal} className='hidden xs:visible'>
-          <Button />
-        </TabBar>
+        <TabBar
+          //setOpenModal={setOpenModal}
+          className='hidden xs:visible'
+        />
         <div className='sg:invisible lg:visible absolute right-6 bottom-[-20px] cursor-pointer'>
-          <Button setOpenModal={setOpenModal} />
+          <Button
+            onClick={() => navigate('/new')}
+
+            //setOpenModal={setOpenModal}
+          />
         </div>
       </div>
     </div>

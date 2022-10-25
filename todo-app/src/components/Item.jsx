@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/style';
 import { BiCheck } from 'react-icons/bi';
 import { BiX } from 'react-icons/bi';
+import { BiHighlight } from 'react-icons/bi';
 
 const Item = (props) => {
   return (
@@ -35,6 +36,10 @@ const Item = (props) => {
       >
         <BiX className='hover:text-black' />
       </span>
+      <BiHighlight
+        className='text-[24px] relative top-4 right-4 cursor-pointer hover:text-secondary'
+        onClick={props.onEdit}
+      />
     </li>
   );
 };

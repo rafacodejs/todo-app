@@ -1,32 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import style from '../styles/style';
 
-const Form = ({ addTodo, setOpenModal }) => {
+const Form = (props) => {
   const [newTodoValue, setNewTodoValue] = React.useState('');
+
+  const navigate = useNavigate();
 
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
   };
   const onCancel = () => {
-    setOpenModal(true);
+    navigate('/');
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue);
-    setOpenModal(true);
+    navigate('/');
+    props.submitEvent(newTodoValue);
   };
 
   return (
-    <div className='w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 fixed'>
-      <div className='w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 absolute bg-black-gradient z-[-2] opacity-[0.7]'></div>
-      <div className='flex justify-center items-center mt-24 z-40'>
+    <div className={`${style.flexCenter} ${style.padding} w-full`}>
+      <div className='w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 absolute bg-black-gradient z-[-2] opacity-[0.7]' />
+      <div className={`${style.flexCenter} ${style.padding} z-40`}>
         <form
-          className={`${style.flexCenter} flex-col w-[90%] max-w-[500px] bg-black-gradient py-[33px] px-[40px] rounded-[12px]`}
+          className={`${style.flexCenter} w-[400px] h-[450px] flex-col bg-black-gradient py-[33px] px-[40px] rounded-[10px]`}
           onSubmit={onSubmit}
         >
-          <label className='font-poppins text-center uppercase font-semibold text-[20px] text-white'>
-            Escribe tu nuevo To Do
+          <label className='font-poppins text-center uppercase font-semibold text-[20px] text-gradient'>
+            {props.label}
           </label>
           <textarea
             className='font-poppins bg-dimWhite text-black
@@ -48,7 +51,7 @@ const Form = ({ addTodo, setOpenModal }) => {
               className={`w-[100px] py-4 item-center mt-6 rounded-xl bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none transition-all duration-500 ease-in-out transform hover:-translate-y-3`}
               type='submit'
             >
-              Añadir
+              {props.submitText}
             </button>
           </div>
         </form>
