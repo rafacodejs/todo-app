@@ -3,7 +3,7 @@ import style, { layout } from '../styles/style';
 import imageToDo from '../assets/imageToDo.png';
 
 const Header = ({ children, loading }) => (
-  <header className={`${style.flexCenter} ${layout.section}`}>
+  <header className={`${style.flexCenter} ${style.paddingY} flex-col`}>
     <img
       src={imageToDo}
       alt='LOGO'
