@@ -1,10 +1,10 @@
-# [TODO Machine](https://todomachineapp.netlify.app/) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/rafacodejs) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/rafacodejs/) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](#)
+# [TODO Machine](https://todomachineapp.netlify.app/) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/rafacodejs) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/rafacodejs/) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](https://rafaelmalpica.netlify.app/)
 
 [![todoapp-cover.jpg](https://i.postimg.cc/RVQDZ2bf/todoapp-cover.jpg)](https://todomachineapp.netlify.app/)
 
 ## 📜 Resumen 📜
 
-App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados.
+App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu día a día. Proyecto construido RectJs, utilizando Vite por primera vez. Manejando RENDER PROP, CUSTOM HOOKS Y HOC, además de utilizar local storage para persistir los datos guardados. En el ultimo update de la aplicación implementé react router por primera vez en uno de mis proyectos 
 
 ## 💻 Si quieres ver el código en tu computadora solo debes hacer esta instalación 💻
 
@@ -12,7 +12,9 @@ App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu
 - Abrir terminal de comandos
   - git https://github.com/rafacodejs/todo-app.git
   - cd todo-app
+  - npm install
   - Abrir tu editor de código
+  - npm run dev
 
 ## 👨‍💻 Tecnologías Usadas 👨‍💻
 
