@@ -10,7 +10,7 @@ App de TODOS para organizar todos tus pendientes en el trabajo, universidad y tu
 
 - Ubicarse en la carpeta que contendrá el proyecto
 - Abrir terminal de comandos
-  - git https://github.com/rafacodejs/todo-app.git
+  - git clone https://github.com/rafacodejs/todo-app.git
   - cd todo-app
   - npm install
   - Abrir tu editor de código
